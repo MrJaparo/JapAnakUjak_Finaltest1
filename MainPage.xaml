@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JapAnakUjak_Finaltest1.MainPage">
+
+    <StackLayout>
+        <!-- Label showing the current slider value -->
+        <Label x:Name="valueLabel" Text="50" HorizontalOptions="Center" FontSize="20"/>
+
+        <!-- Slider -->
+        <Slider x:Name="slider1" 
+                Minimum="0" 
+                Maximum="100" 
+                ValueChanged="OnSliderValueChanged" 
+                HorizontalOptions="FillAndExpand"/>
+
+        <!-- Label showing the result (e.g., 'Failed', 'Passed') -->
+        <Label x:Name="resultLabel" 
+               Text="Passed" 
+               FontSize="20" 
+               HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
